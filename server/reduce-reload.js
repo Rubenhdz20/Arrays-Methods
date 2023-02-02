@@ -36,6 +36,6 @@ const result = arr.reduce((obj, item) => {
   '1-5': 0,
   '6-8': 0,
   '9-10': 0
-})
+}) 
 
 console.log(result)
