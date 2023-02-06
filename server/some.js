@@ -38,6 +38,8 @@ const deliver = orders.some(item => item.delivered);
 
 console.log(deliver);
 
+///////////
+
 const dates = [
     {
       startDate: new Date(2021, 1, 1, 10),
