@@ -14,5 +14,8 @@ for (let i = 0; i < matriz.length; i++) {
     }
 }
 
-console.log()
+const flap = matriz.flat(3);
+
+console.log('for', newArray);
+console.log('flat', flap);
 
