@@ -34,3 +34,25 @@ const update = {
         description: 'vegan pizza'
     }
 }
+
+const productIndex2 = products2.findIndex(item => item.id === update.id);
+
+products2[productIndex2] = {
+    ...products2[productIndex2], 
+    ...update.changes,
+}
+
+console.log('Inmutable2', products2);
+ 
+const newArray2 = products2.map(item => {
+    if(item.id === update.id){
+        return {
+            ...item,
+            ...update.changes
+        }
+    }else{
+        return {
+            ...item
+        }
+    }
+});
